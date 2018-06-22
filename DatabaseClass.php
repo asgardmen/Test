@@ -5,7 +5,7 @@ class Database extends mysqli
 	protected $exception;
 	public function __construct()
 	{
-		$this->con			= $GLOBALS['database'];
+		$this->con = $GLOBALS['database'];
 
         if (!isset($this->con['port'])) {
             $this->con['port'] = 3306;
